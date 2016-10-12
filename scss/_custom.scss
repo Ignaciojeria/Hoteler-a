@@ -1,0 +1,20 @@
+//Mis modificaciones css se debe importar a app.scss.
+
+section.Habitaciones{
+  div.imagen{
+    position: relative;
+    div.titulo{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: rem-calc(20);
+      h3{
+        color: white;
+      }
+    }
+  }
+  div .contenido{
+    background-color: white;
+    padding: rem-calc(20);
+  }
+}
