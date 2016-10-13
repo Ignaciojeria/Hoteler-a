@@ -18,3 +18,26 @@ section.Habitaciones{
     padding: rem-calc(20);
   }
 }
+
+.Imagen-Separador{
+height: 200px;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: scroll;
+@include breakpoint(large){
+background-size: cover;
+height: 350px;
+}
+
+}
+
+.Imagen-Piscina{
+  background-image: url(../assets/imagenes/separadores/small/separator01-image.jpg);
+  @include breakpoint(medium){
+    background-image: url(../assets/imagenes/separadores/medium/separator01-image.jpg);
+  }
+  @include breakpoint(large){
+background-image: url(../assets/imagenes/separadores/large/separator01-image.jpg);
+  }
+
+}
