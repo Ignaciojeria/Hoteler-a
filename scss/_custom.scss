@@ -39,5 +39,35 @@ height: 350px;
   @include breakpoint(large){
 background-image: url(../assets/imagenes/separadores/large/separator01-image.jpg);
   }
+}
 
+section.Galeria-Sobre-Nosotros{
+@include breakpoint(medium){
+  height: rem-calc(560);
+  position: relative;
+  }
+  @include breakpoint(large){
+    height: rem-calc(420);
+  }
+}
+.vacio{
+  @include breakpoint(medium){
+    height: rem-calc(560);
+    }
+    @include breakpoint(large){
+      height: rem-calc(420);
+    }
+}
+.Contenido-Galeria-Sobre-Nosotros{
+  @include breakpoint(medium){
+    position: absolute;
+    top: rem-calc(20);
+    left: 0;
+    width: 100%;
+  }
+}
+
+
+.azul{
+  background-color: rgb(90, 103, 149);
 }
