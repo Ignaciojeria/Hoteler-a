@@ -40,11 +40,21 @@ height: 350px;
 background-image: url(../assets/imagenes/separadores/large/separator01-image.jpg);
   }
 }
+.Imagen-Comedor{
+  background-image: url(../assets/imagenes/separadores/small/separator02-image.jpg);
+  @include breakpoint(medium){
+    background-image: url(../assets/imagenes/separadores/medium/separator02-image.jpg);
+  }
+  @include breakpoint(large){
+background-image: url(../assets/imagenes/separadores/large/separator02-image.jpg);
+  }
+}
+
 
 section.Galeria-Sobre-Nosotros{
 @include breakpoint(medium){
   height: rem-calc(560);
-  position: relative;
+position: relative;
   }
   @include breakpoint(large){
     height: rem-calc(420);
@@ -53,6 +63,7 @@ section.Galeria-Sobre-Nosotros{
 .vacio{
   @include breakpoint(medium){
     height: rem-calc(560);
+
     }
     @include breakpoint(large){
       height: rem-calc(420);
@@ -61,7 +72,7 @@ section.Galeria-Sobre-Nosotros{
 .Contenido-Galeria-Sobre-Nosotros{
   @include breakpoint(medium){
     position: absolute;
-    top: rem-calc(20);
+    top:rem-calc(20);
     left: 0;
     width: 100%;
   }
@@ -70,4 +81,44 @@ section.Galeria-Sobre-Nosotros{
 
 .azul{
   background-color: rgb(90, 103, 149);
+}
+.Reserva{
+  padding-top: rem-calc(50);
+}
+footer{
+  padding-top: rem-calc(40);
+  background-color: rgb(90, 103, 149);
+  color: white;
+  .menu{
+    a{
+      color: white;
+    }
+  }
+}
+
+.Informacion-Contacto{
+  li{
+    position: relative;
+    padding-left: rem-calc(60);
+    height: 80px;
+    padding-top: rem-calc(10);
+    i{
+      position: absolute;
+      font-size: rem-calc(30);
+      top: 0;
+      left: 0;
+
+    }
+  }
+}
+.social{
+  i{
+    font-size: rem-calc(40);
+    padding-right: rem-calc(25);
+  }
+}
+
+div.copyright{
+  background-color: darken(rgb(90, 103, 149), 10);
+  padding-top: rem-calc(10);
 }
